@@ -37,6 +37,7 @@ namespace TeaBagMaker
         private void CountDownBtn_Click(object sender, EventArgs e)
         {
             this.timer1.Enabled = true;
+            this.teaComboBox.Enabled = false;
         }
 
         private void TeaComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -71,6 +72,7 @@ namespace TeaBagMaker
             if (time == 0)
             {
                 this.timer1.Enabled = false;
+                this.teaComboBox.Enabled = true;
                 MessageBox.Show("티백을 건지세요!", "종료",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.teaComboBox.Focus();
