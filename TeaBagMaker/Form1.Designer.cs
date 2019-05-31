@@ -47,11 +47,12 @@
             // 
             // countDownBtn
             // 
+            this.countDownBtn.Font = new System.Drawing.Font("나눔고딕OTF", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.countDownBtn.Location = new System.Drawing.Point(12, 44);
             this.countDownBtn.Name = "countDownBtn";
             this.countDownBtn.Size = new System.Drawing.Size(223, 92);
             this.countDownBtn.TabIndex = 1;
-            this.countDownBtn.Text = "카운트";
+            this.countDownBtn.Text = "담그기!";
             this.countDownBtn.UseVisualStyleBackColor = true;
             this.countDownBtn.Click += new System.EventHandler(this.CountDownBtn_Click);
             // 

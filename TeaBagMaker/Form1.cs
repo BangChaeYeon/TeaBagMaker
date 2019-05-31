@@ -57,6 +57,11 @@ namespace TeaBagMaker
                     time = 120;
                     break;
             }
+
+            int min, sec;
+            min = time / 60;
+            sec = time % 60;
+            timeTxt.Text = "남은 시간: " + min + ":" + sec;
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
@@ -69,6 +74,7 @@ namespace TeaBagMaker
                 MessageBox.Show("티백을 건지세요!", "종료",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.teaComboBox.Focus();
+                timeTxt.Text = "남은 시간: ";
             }
             else
             {
